@@ -35,7 +35,7 @@ img {
   color: red;
 }
 
-.card button {
+.rating button {
   margin: 15px auto;
   padding: 0.5em 1.5em;
   background-color: orangered;
@@ -48,4 +48,9 @@ img {
 .card.card--dark {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+}
+
+/* svg icon need to look it up */
+.close__FaTimes {
+  background-color: red;
 }

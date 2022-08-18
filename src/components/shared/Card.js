@@ -1,3 +1,6 @@
+//import React from "react" after installing react-icons
+import React from "react";
+
 function Card({ children, cardDark }) {
   return <div className={`card ${cardDark && "card--dark"}`}>{children}</div>;
 
@@ -15,6 +18,6 @@ function Card({ children, cardDark }) {
   // );
 }
 Card.defaultProps = {
-  cardDark: false,
+  cardDark: true,
 };
 export default Card;

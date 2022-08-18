@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaTimes } from "react-icons/fa";
 import Card from "./shared/Card";
 
 function RecipeItem({ recipe, setData }) {
@@ -17,7 +17,14 @@ function RecipeItem({ recipe, setData }) {
       );
     }
   };
-
+  const handleDelete = () => {
+    setData((data) =>
+      data.filter((rcp) => {
+        return (rcp.id = !recipe.id);
+      })
+    );
+    alert(`Deleted ${recipe.name} recipe`);
+  };
   return (
     // pass cardDark={true} prop
     <Card className="recipeCard">
@@ -29,6 +36,9 @@ function RecipeItem({ recipe, setData }) {
       <div className="rating">
         <button onClick={handleClick}>Rate</button>
       </div>
+      <button onClick={handleDelete} className="close">
+        <FaTimes className="close__FaTimes" color="white" />
+      </button>
     </Card>
   );
 }
