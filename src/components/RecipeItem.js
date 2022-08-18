@@ -20,7 +20,7 @@ function RecipeItem({ recipe, setData }) {
   const handleDelete = () => {
     setData((data) =>
       data.filter((rcp) => {
-        return (rcp.id = !recipe.id);
+        return rcp.id != recipe.id;
       })
     );
     alert(`Deleted ${recipe.name} recipe`);
