@@ -44,3 +44,8 @@ img {
   border: none;
   border-radius: 1rem;
 }
+
+.card.card--dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
