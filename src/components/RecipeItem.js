@@ -31,7 +31,7 @@ function RecipeItem({ recipe, setData }) {
       <h1>{recipe.name}</h1>
       <h3>{recipe.rating}</h3>
       <div className="recipeImg">
-        <img src={recipe.imageUrl} alt={`recipe ${recipe.id + 1}`} />
+        <img src={recipe.imageUrl} alt={`recipe ${recipe.id}`} />
       </div>
       <div className="rating">
         <button onClick={handleClick}>Rate</button>
