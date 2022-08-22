@@ -54,3 +54,8 @@ img {
 .close__FaTimes {
   background-color: red;
 }
+
+.form-control input,
+.form-control button {
+  margin: 5px 15px;
+}

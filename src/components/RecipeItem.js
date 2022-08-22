@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import Card from "./shared/Card";
-
+import PropTypes from "prop-types";
 function RecipeItem({ recipe, setData }) {
   const handleClick = () => {
     let userRating = prompt(`rate ${recipe.name} out of`);
@@ -42,5 +42,14 @@ function RecipeItem({ recipe, setData }) {
     </Card>
   );
 }
-
+// RecipeItem.propTypes = {
+//   name: PropTypes.string,
+//   rating: PropTypes.number,
+//   imageUrl: PropTypes.string,
+// };
+// RecipeItem.defaultProps = {
+//   name: "recipe",
+//   rating: 5,
+//   imageUrl: "",
+// };
 export default RecipeItem;
