@@ -1,6 +1,7 @@
+import { v4 as uuidv4 } from "uuid";
 const RecipiesData = [
   {
-    id: 1,
+    id: parseInt(uuidv4()),
     name: "Pizza Pepperoni",
     cookTime: "10-20",
     ingredients: ["tomatoes", "cheese", "toppings"],
@@ -10,7 +11,7 @@ const RecipiesData = [
     steps: ["just cook it lol!"],
   },
   {
-    id: 2,
+    id: parseInt(uuidv4()),
     name: "Meatball",
     ingredients: ["meat"],
     cookTime: "20-30",
@@ -20,7 +21,7 @@ const RecipiesData = [
     steps: ["just cook it lol!"],
   },
   {
-    id: 3,
+    id: parseInt(uuidv4()),
     name: "Hamburger",
     ingredients: ["meat", "cheese", "letuce", "sauces"],
     cookTime: "10-15",
@@ -30,7 +31,7 @@ const RecipiesData = [
     steps: ["just cook it lol!"],
   },
   {
-    id: 4,
+    id: parseInt(uuidv4()),
     name: "Fried Potatoes",
     ingredients: ["potatoes"],
     cookTime: "15-20",

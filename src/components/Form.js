@@ -12,7 +12,7 @@ const Form = ({ setData }) => {
 
     setData((data) => [
       ...data,
-      { name: recipeName, id: uuidv4(), rating: recipeRating },
+      { name: recipeName, id: parseInt(uuidv4()), rating: recipeRating },
     ]);
     recipeNameRef.current.value = "";
     recipeRatingRef.current.value = "";

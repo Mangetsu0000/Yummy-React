@@ -29,9 +29,9 @@ function RecipeItem({ recipe, setData }) {
     // pass cardDark={true} prop
     <Card className="recipeCard">
       <h1>{recipe.name}</h1>
-      <h3>{recipe.rating}</h3>
+      <h3>Rating: {recipe.rating}</h3>
       <div className="recipeImg">
-        <img src={recipe.imageUrl} alt={`recipe ${recipe.id}`} />
+        <img src={recipe.imageUrl} alt="" />
       </div>
       <div className="rating">
         <button onClick={handleClick}>Rate</button>
